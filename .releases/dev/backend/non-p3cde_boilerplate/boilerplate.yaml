@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment-non-cde
-  namespace: p3cde
+  namespace: non-p3cde
   labels:
     app: nginx
 spec:
