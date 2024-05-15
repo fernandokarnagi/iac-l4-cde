@@ -2,12 +2,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-deployment-cde
   namespace: p3cde
   labels:
     app: nginx
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: nginx

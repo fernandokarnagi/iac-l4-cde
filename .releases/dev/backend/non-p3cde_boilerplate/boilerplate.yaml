@@ -2,12 +2,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
-  namespace: non-p3cde
+  name: nginx-deployment-non-cde
+  namespace: p3cde
   labels:
     app: nginx
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
